@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import SearchBox from './SearchBox'
+import SearchBox from './search-box'
 import { RiSettings3Line } from 'react-icons/ri'
 import { TbGridDots } from 'react-icons/tb'
 import SearchHeaderOptions from './search-header-options'
