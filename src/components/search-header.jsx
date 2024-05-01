@@ -5,6 +5,7 @@ import { RiSettings3Line } from 'react-icons/ri'
 import { TbGridDots } from 'react-icons/tb'
 import SearchHeaderOptions from './search-header-options'
 
+import { Suspense } from 'react'
 export default function SearchHeader() {
 	return (
 		<header className='sticky top-0 bg-white'>
@@ -20,7 +21,9 @@ export default function SearchHeader() {
 					/>
 				</Link>
 				<div className='flex-1'>
-					<SearchBox />
+					<Suspense fallback={<div>Loading...</div>}>
+						<SearchBox />
+					</Suspense>
 				</div>
 				<div className='hidden space-x-2 md:inline-flex'>
 					<RiSettings3Line className='cursor-pointer rounded-full bg-transparent p-2 text-4xl hover:bg-gray-200' />
@@ -30,7 +33,9 @@ export default function SearchHeader() {
 					Sign in
 				</button>
 			</div>
-			<SearchHeaderOptions />
+			<Suspense fallback={<div>Loading...</div>}>
+				<SearchHeaderOptions />
+			</Suspense>
 		</header>
 	)
 }

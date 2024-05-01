@@ -1,10 +1,12 @@
 import SearchHeader from '../../components/search-header'
-import React from 'react'
+import React, { Suspense } from 'react'
 
 function Layout({ children }) {
 	return (
 		<div>
-			<SearchHeader />
+			<Suspense fallback={<div>Loading...</div>}>
+				<SearchHeader />
+			</Suspense>
 			{children}
 		</div>
 	)
