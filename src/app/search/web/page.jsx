@@ -2,7 +2,7 @@ import React from 'react'
 import Error from '../error'
 import WebSearchResult from '../../../components/web-search-result'
 
-async function Page({ searchParams }) {
+export default async function Page({ searchParams }) {
 	const response = await fetch(
 		`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`
 	)
@@ -13,4 +13,3 @@ async function Page({ searchParams }) {
 	return <div>{results && <WebSearchResult results={data} />}</div>
 }
 
-export default Page
