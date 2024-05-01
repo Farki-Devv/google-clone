@@ -20,7 +20,7 @@ export default function SearchBox() {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className='flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center'
+			className='ml-10 mr-5 flex max-w-3xl grow items-center rounded-full border border-gray-200 px-6 py-3 shadow-lg'
 		>
 			<input
 				type='text'
@@ -30,12 +30,12 @@ export default function SearchBox() {
 				placeholder='Search to google clone🤫'
 			/>
 			<RxCross2
-				className='text-2xl text-gray-500 cursor-pointer sm:mr-2'
+				className='cursor-pointer text-2xl text-gray-500 sm:mr-2'
 				onClick={() => setTerm('')}
 			/>
-			<BsFillMicFill className='hidden sm:inline-flex text-4xl text-blue-500 border-l-2  border-gray-300 mr-3 pl-4' />
+			<BsFillMicFill className='mr-3 hidden border-l-2 border-gray-300 pl-4  text-4xl text-blue-500 sm:inline-flex' />
 			<AiOutlineSearch
-				className='text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer'
+				className='hidden cursor-pointer text-2xl text-blue-500 sm:inline-flex'
 				onClick={handleSubmit}
 			/>
 		</form>

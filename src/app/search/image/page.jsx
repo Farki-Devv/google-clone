@@ -13,8 +13,8 @@ export default async function ImageSearchPage({ searchParams }) {
 
 	if (!results) {
 		return (
-			<div className='flex flex-col justify-center items-center pt-10'>
-				<h1 className='text-3xl mb-4'>
+			<div className='flex flex-col items-center justify-center pt-10'>
+				<h1 className='mb-4 text-3xl'>
 					No results found for {searchParams.searchTerm}
 				</h1>
 				<p className='text-lg'>
