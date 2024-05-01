@@ -27,7 +27,6 @@ export default function SearchBox() {
 				className='w-full focus:outline-none'
 				value={term}
 				onChange={e => setTerm(e.target.value)}
-				placeholder='Search to google clone🤫'
 			/>
 			<RxCross2
 				className='cursor-pointer text-2xl text-gray-500 sm:mr-2'

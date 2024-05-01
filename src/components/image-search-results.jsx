@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-import PaginationButtons from './pagination-buttons'
+import PaginationButtons from './PaginationButtons'
 
-function ImageSearchResults({ results }) {
+export default function ImageSearchResults({ results }) {
 	return (
 		<div className='mt-4 pb-40 sm:pb-24'>
 			<div className='grid grid-cols-1 space-x-4 px-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
@@ -36,4 +35,3 @@ function ImageSearchResults({ results }) {
 		</div>
 	)
 }
-export default ImageSearchResults

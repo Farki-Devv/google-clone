@@ -21,7 +21,7 @@ export default function SearchHeaderOptions() {
 					pathname === '/search/web' && '!border-blue-600 !text-blue-600'
 				}`}
 			>
-				<AiOutlineSearch className='text-sm' />
+				<AiOutlineSearch className='text-md' />
 				<p>All</p>
 			</div>
 			<div
@@ -30,7 +30,7 @@ export default function SearchHeaderOptions() {
 					pathname === '/search/image' && '!border-blue-600 !text-blue-600'
 				}`}
 			>
-				<AiOutlineCamera className='text-sm' />
+				<AiOutlineCamera className='text-md' />
 				<p>Images</p>
 			</div>
 		</div>
