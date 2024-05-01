@@ -3,7 +3,7 @@ import Link from 'next/link'
 import SearchBox from './SearchBox'
 import { RiSettings3Line } from 'react-icons/ri'
 import { TbGridDots } from 'react-icons/tb'
-import SearchHeaderOptions from './SearchHeaderOptions'
+import SearchHeaderOptions from './search-header-options'
 
 export default function SearchHeader() {
 	return (
